@@ -1,0 +1,18 @@
+#workflow (Should have a name) 
+name: Daily scheduler
+
+#on (tells whent the workflow should run)
+on:
+  workflow_dispatch:
+  
+#jobs(should be inside the workflow, there can be 1 or more than one job)
+jobs:
+  Organiser list:
+  runs-on: ubuntu-latest
+    #steps(should be inside the jobs)
+      steps:
+        - name: List-all-the-titles
+          run: cat README.md
+          
+    
+      #actions(should be inside the steps)
